@@ -36,9 +36,9 @@
 - In order to connect to EC2 through ssh paste the `.pem` certificate in your `PWD`
 - pip3 install "apache-airflow==2.7.1" --constraint "https://raw.githubusercontent.com/apache/airflow/constraints-2.7.1/constraints-no-providers-3.11.txt"
 - airflow db init
--  airflow users create --username admin --password admin@123 --firstname Vikas --lastname Choudhary --role Admin --email c.vikas2001@gmail.com
+-  airflow users create --username admin --password admin@123 --firstname Jon --lastname Doe --role Admin --email admin@domain.com
 - airflow webserver -D
 - airflow scheduler -D
 - Add new inbound rule under security group in EC2 instance (Custom TCP, 8080, Anywhere IPv4)
-- Launch the public IP in browser with 8080 port - Airflow UI
+- Launch the public IP in browser with 8080 port - Airflow UI(use the above created credentials)
 - Copy code to airflow and then run the DAG
