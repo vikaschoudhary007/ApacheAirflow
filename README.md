@@ -21,6 +21,10 @@
 
 - To run the entire DAG(in a flow task by task)
 
+### The following example is a simple ETL pipeline 
+* To extract data from twitter for any user 
+* Transform it into a dataframe to store it as csv file and 
+* Load the data finally to a S3 bucket for further analysis
 
 #### Twitter APIS -- V1.0 doesn't work anymore
 #### If you have access to v2.0 you will need the following mentioned API keys
@@ -29,6 +33,8 @@
 - CONSUMER SECRET 
 - ACCESS TOKEN 
 - ACCESS TOKEN SECRET
+
+#### In case you don't have access to Twitter API use `Nitter` to get user tweets
 
 #### Airflow
 

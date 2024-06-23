@@ -1,8 +1,19 @@
 import pandas as pd
+import tweepy
 from ntscraper import Nitter
 import json
 from datetime import datetime
 import s3fs
+
+# # With Twitter API
+
+# CONSUMER_KEY='YOUR_CONSUMER_KEY'
+# CONSUMER_SECRET='YOUR_CONSUMER_SECRET'
+# ACCESS_TOKEN='YOUR_ACCESS_TOKEN'
+# ACCESS_TOKEN_SECRET='YOUR_ACCESS_TOKEN_SECRET'
+# auth = tweepy.auth.OAuth1UserHandler(CONSUMER_KEY, CONSUMER_SECRET, ACCESS_TOKEN, ACCESS_TOKEN_SECRET)
+# api = tweepy.API(auth)  # user this api to get data
+
 
 def get_tweets(username, count):
     scraper = Nitter()
